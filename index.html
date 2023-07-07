@@ -2,51 +2,367 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/cec6b09163.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/cec6b09163.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="header-container">
-        <div class="logo-container">
-            <a href="/">AMANDA SMITH</a>
-        </div>
-        <div class="menu-container">
-            <ul class="menu-item">
-                <li><a>HOME</a></li>
-                <li class="submenu-item">
-                    <a>BLOG</a>
-                    <span><i class="fa-solid fa-angle-down"></i></span>
-                    <ul class="sub-menu">
-                        <li>Cooking</li>
-                        <li>Recipes</li>
-                    </ul>
-                </li>
-                <li><a>SHOP</a></li>
-                <li><a>ABOUT</a></li>
-                <li><a>CONTACT</a></li>
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="logo-container">
+        <a href="/">AMANDA SMITH</a>
+      </div>
+      <div class="menu-bars">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </div>
+
+      <div class="menu-container">
+        <ul class="menu-item">
+          <li><a>HOME</a></li>
+          <li class="submenu-item">
+            <a>BLOG</a>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+            <ul class="sub-menu">
+              <li>Cooking</li>
+              <li>Recipes</li>
             </ul>
-        </div>
+          </li>
+          <li><a>SHOP</a></li>
+          <li><a>ABOUT</a></li>
+          <li><a>CONTACT</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
+  <div class="not-menu">
     <div class="content-container">
-        <section class="content-welcome">
-            <div class="left-welcome">
-                <h1>Hello There <br> I'm Amanda Smith</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, con sectetur adi piscing elit, sed do eius mod tempor incidi dunt ut
-                    labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis no strud exer citation.
-                </p>
-            </div>
-            <div class="right-welcome">
-                <img src="./header-image.png" alt="header-image">
-            </div>
-        </section>
+      <section class="content-wrapper">
+        <div class="left-welcome">
+          <h1>
+            Hello There <br />
+            I'm Amanda Smith.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, con sectetur adi piscing elit, sed do
+            eius mod tempor incidi dunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis no strud exer citation.
+          </p>
+          <div class="btn-welcome">
+            <button class="btn-read">Read My Blog</button>
+            <button class="btn-visit">Visit my Shop</button>
+          </div>
+        </div>
+        <div class="right-welcome">
+          <img src="./header-image.png" alt="header-image" />
+        </div>
+      </section>
     </div>
-    <div class="footer-container"></div>
+
+    <div class="content-container form-container">
+      <section class="content-wrapper form-letter">
+        <div class="label">
+          <h2>Join My <span>Newsletter</span></h2>
+        </div>
+        <div class="form-user">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+          <button>SUBCRIBE</button>
+        </div>
+      </section>
+    </div>
+    <div class="content-container posts-container">
+      <section class="content-wrapper posts-wrapper">
+        <div class="header-posts">
+          <h2>Lastest Posts</h2>
+          <button class="btn-visit">Visit Blog</button>
+        </div>
+        <div class="content-posts">
+          <div class="post">
+            <div class="post-image">
+              <img src="./ilovekitchen.png" alt="kitchenimage">
+              <span class="button-inline">Cooking</span>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-title">
+                I Love My Kitchen
+              </div>
+              <div class="post-author">
+                <img src="./avatar.jpeg">
+                <span>Amanda Smith, September 16, 2022</span>
+              </div>
+              <div class="post-description">
+                <p>Etiam placerat velit vitae dui blandit sollicitudin. Vestibulum tincidunt
+                  sed dolor sit amet volutpat.
+                  Nullam…</p>
+              </div>
+              <div>
+                <button class="btn-read">Continue Reading</button>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-image">
+              <img src="./ilovekitchen.png" alt="kitchenimage">
+              <span class="button-inline">Brunch</span>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-title">
+                6 Easy Brunch Ideas
+              </div>
+              <div class="post-author">
+                <img src="./avatar.jpeg">
+                <span>Olivia Jones, September 15, 2022</span>
+              </div>
+              <div class="post-description">
+                <p>Etiam placerat velit vitae dui blandit sollicitudin. Vestibulum tincidunt
+                  sed dolor sit amet volutpat.
+                  Nullam…</p>
+              </div>
+              <div>
+                <button class="btn-read">Continue Reading</button>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-image">
+              <img src="./ilovekitchen.png" alt="kitchenimage">
+              <span class="button-inline">Cooking</span>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-title">
+                Awesome Cooking Hacks
+              </div>
+              <div class="post-author">
+                <img src="./avatar.jpeg">
+                <span>Liam Davis, September 14, 2022</span>
+              </div>
+              <div class="post-description">
+                <p>Etiam placerat velit vitae dui blandit sollicitudin. Vestibulum tincidunt
+                  sed dolor sit amet volutpat.
+                  Nullam…</p>
+              </div>
+              <div>
+                <button class="btn-read">Continue Reading</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="content-container product-container">
+      <section class="content-wrapper product-wrapper">
+        <div class="header-product">
+          <h2>Popular Products</h2>
+          <button class="btn-visit">Go To Shop</button>
+        </div>
+        <div class="content-products">
+          <div class="product">
+            <div class="product-img">
+              <img src="./product.png" alt="heelo">
+              <!-- <span>Sale</span> -->
+            </div>
+            <div class="product-name">
+              Spice Grinder
+            </div>
+            <div class="rate">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <div class="product-price">
+              <p>&euro;1000</p>
+            </div>
+            <div>
+              <button class="btn-read">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="./product1.png" alt="heelo">
+              <div class="sale-tag"><span>Sale!</span></div>
+            </div>
+            <div class="product-name">
+              Ceramic Cup
+            </div>
+            <div class="rate">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <div class="product-price">
+              <p class="discount-price">&euro;179.00</p>
+              <p>&euro;79.00</p>
+            </div>
+            <div>
+              <button class="btn-read">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="./product2.png" alt="heelo">
+              <!-- <span>Sale</span> -->
+            </div>
+            <div class="product-name">
+              The Gourmet Cookbook
+            </div>
+            <div class="rate">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <div class="product-price">
+              <p>&euro;249.00</p>
+            </div>
+            <div>
+              <button class="btn-read">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="./product3.png" alt="heelo">
+              <!-- <span>Sale</span> -->
+            </div>
+            <div class="product-name">
+              Woodn Cutlery
+            </div>
+            <div class="rate">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <div class="product-price">
+              <p>&euro;49.00</p>
+            </div>
+            <div>
+              <button class="btn-read">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="content-container profile-container">
+      <div class="content-wrapper profile-wrapper">
+        <div class="profile-header">
+          <h2>Instagram @AmandaSmith</h2>
+        </div>
+        <div class="profile-content">
+          <div class="images-container">
+            <div class="image-profile">
+              <img src="./profile.png">
+            </div>
+            <div class="image-profile">
+              <img src="./profile.png">
+            </div>
+            <div class="image-profile">
+              <img src="./profile.png">
+            </div>
+            <div class="image-profile">
+              <img src="./profile.png">
+            </div>
+            <div class="image-profile">
+              <img src="./profile.png">
+            </div>
+            <div class="image-profile">
+              <img src="./profile.png">
+            </div>
+            <div class="image-profile">
+              <img src="./profile.png">
+            </div>
+            <div class="image-profile">
+              <img src="./profile.png">
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="btn-read btn-profile">Follow @AmandaSmith</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="content-container footer-container">
+      <div class="content-wrapper footer-wrapper">
+        <div class="superb-pixels">
+          <div class="title-superb">
+            <h3>Superb Pixels</h3>
+          </div>
+          <div class="content-superb">
+            <p>Sed ut perspiciatis unde omnis iste natus voluptatem fringilla tempor
+              dignissim at, pretium et arcu natus voluptatem fringilla.</p>
+          </div>
+          <div class="social-media">
+            <i class="fa-brands fa-twitter fa-xl" style="color: #0f62f0;"></i>
+            <i class="fa-brands fa-youtube fa-xl" style="color: #f20713;"></i>
+            <i class="fa-brands fa-instagram fa-xl" style="color: #d936ad;"></i>
+          </div>
+        </div>
+        <div class="about">
+          <div class="title-about">
+            <h3>About</h3>
+          </div>
+          <div class="content-about">
+            <ul>
+              <li>About me</li>
+              <li>My Story</li>
+              <li>Why I Write</li>
+              <li>My Experience</li>
+            </ul>
+          </div>
+        </div>
+        <div class="resources">
+          <div class="title-resources">
+            <h3>Resources</h3>
+          </div>
+          <div class="content-resources">
+            <ul>
+              <li>Home</li>
+              <li>Shop</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="newsletter">
+          <div class="title-newsletter">
+            <h3>Newsletter</h3>
+          </div>
+          <div class="content-newletters">
+            <p>Lorem Ipsum ut perspiciatis unde omnis iste natus</p>
+          </div>
+          <div class="form-footer">
+            <input type="text" placeholder="Your Email Address...">
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p><i class="fa-regular fa-copyright" style="color: #121212;"></i> Copy Right SuperbThemes - Made With Love</p>
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="content-container">
+      <div class="content-wrapper">
+        <ul class="menu-list">
+          <li>HOME</li>
+          <li>BLOG</li>
+          <li>SHOP</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
