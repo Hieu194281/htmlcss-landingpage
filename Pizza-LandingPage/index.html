@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="./pizzalian-logo.svg" alt="logo-pizza">
+            </div>
+            <div class="nav-container">
+                <ul class="menu">
+                    <li>Demos</li>
+                    <li>Features</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+            <div class="btn-container">
+                <button class="btn-purchase">Purchase Theme</button>
+            </div>
+        </div>
+    </div>
+    <div class="slide-1">
+        <div class="img-welcome">
+            <img src="./img-slide-1.png" alt="welcome">
+        </div>
+        <div class="title-welcome">
+            <span class="pizza-restaurant">Pizza Restaurant</span>
+            <span class="wordpress-theme">WordPress Themes</span>
+        </div>
+        <div class="button-welcome">
+            <button class="button-demo">View Demo</button>
+            <button class="btn-purchase btn-pusrchare-slide">Purchase Theme</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.body.addEventListener("mouseover", function () {
+        var element = document.querySelector(".img-welcome");
+        var element1 = document.querySelector(".title-welcome");
+        var element2 = document.querySelector(".button-demo");
+        var element3 = document.querySelector(".btn-pusrchare-slide");
+        element.classList.add("show");
+        element1.classList.add("show");
+        element2.classList.add("show");
+        element3.classList.add("show");
+    });
+</script>
+
+</html>

@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Bevan", cursive;
+  font-family: "Roboto", sans-serif;
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideAnimation1 {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@font-face {
+  font-family: "Bevan";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/bevan/v21/4iCj6KZ0a9NXjG8SWCvLtg.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/oswald/v49/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUliZTaR.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@media (min-width: 1024px) {
+  /* Add your CSS rules for desktop devices here */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  .header {
+    padding: 15px 30px;
+    background-color: rgb(198, 32, 46);
+  }
+  .header-container {
+    width: 100%;
+    display: flex;
+  }
+  .logo-container {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .nav-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-container ul {
+    padding: 0;
+
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu li {
+    color: white;
+    font-weight: 600;
+    font-family: "open sans", helveticaneue-light, "helvetica neue light",
+      "helvetica neue", Helvetica, Arial, "lucida grande", sans-serif;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+  .btn-container {
+    width: 25%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .btn-purchase {
+    font-size: 16px;
+    border-radius: 28px;
+    padding: 15px 30px;
+    background: rgb(214, 230, 100);
+    box-sizing: border-box;
+    border: none;
+    color: black;
+    font-family: "open sans", helveticaneue-light, "helvetica neue light",
+      "helvetica neue", Helvetica, Arial, "lucida grande", sans-serif;
+    &:hover {
+      background: rgb(104, 116, 17);
+      color: white;
+    }
+  }
+  .slide-1 {
+    padding: 30px 30px 100px 30px;
+    background-color: rgb(198, 32, 46) !important;
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+  .img-welcome {
+    /* background-color: green; */
+    opacity: 0;
+    width: 100%;
+  }
+  .img-welcome img {
+    width: 100%;
+  }
+  .img-welcome.show {
+    opacity: 1;
+    animation: pulse 2s ease-in-out;
+  }
+  .title-welcome {
+    opacity: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .title-welcome.show {
+    opacity: 1;
+    animation: tracking-in-expand 1s ease-in;
+  }
+
+  .pizza-restaurant {
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: "Bevan" cursive !important;
+    text-rendering: optimizeLegibility;
+    margin-right: 10px;
+  }
+  .wordpress-theme {
+    color: #fff;
+    font-family: Oswald, Sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 58px;
+  }
+  .button-welcome {
+    text-align: center;
+  }
+  .button-demo.show {
+    opacity: 1;
+    animation: slideAnimation 1s ease-in-out;
+  }
+  .button-welcome .btn-purchase.show {
+    opacity: 1;
+    animation: slideAnimation1 1s ease-in-out;
+  }
+  .button-demo {
+    opacity: 0;
+    margin-right: 20px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 28px;
+    padding: 15px 30px;
+    background: rgb(255 255 255);
+    box-sizing: border-box;
+    border: none;
+    color: black;
+    font-family: "open sans", helveticaneue-light, "helvetica neue light",
+      "helvetica neue", Helvetica, Arial, "lucida grande", sans-serif;
+    &:hover {
+      background: rgb(97, 30, 36);
+      color: white;
+    }
+  }
+  .button-welcome .btn-purchase {
+    opacity: 0;
+    width: 200px;
+  }
+}
+
+/* Styles for tablet devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Add your CSS rules for tablet devices here */
+}
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  /* Add your CSS rules for mobile devices here */
+}
