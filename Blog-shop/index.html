@@ -16,12 +16,20 @@
         <a href="/">AMANDA SMITH</a>
       </div>
       <div class="menu-bars">
-        <i class="fa-solid fa-bars fa-xl"></i>
+        <i onclick="handleMenu()" class="fa-solid fa-bars fa-xl"></i>
       </div>
 
       <div class="menu-container">
         <ul class="menu-item">
           <li><a>HOME</a></li>
+          <li class="submenu-item">
+            <a>BLOG</a>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+            <ul class="sub-menu">
+              <li>Cooking</li>
+              <li>Recipes</li>
+            </ul>
+          </li>
           <li class="submenu-item">
             <a>BLOG</a>
             <span><i class="fa-solid fa-angle-down"></i></span>
@@ -355,7 +363,15 @@
       <div class="content-wrapper">
         <ul class="menu-list">
           <li>HOME</li>
-          <li>BLOG</li>
+          <li class="submenu-item">
+            <div class="title-menu"><a>BLOG</a>
+              <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+            <ul class="sub-menu">
+              <li>Cooking</li>
+              <li>Recipes</li>
+            </ul>
+          </li>
           <li>SHOP</li>
           <li>ABOUT</li>
           <li>CONTACT</li>
@@ -364,5 +380,26 @@
     </div>
   </div>
 </body>
+
+<script>
+  console.log(document.querySelector('.menu-bars'))
+
+  function handleMenu() {
+    // console.log(document.querySelector('.menu-bars'))
+    // if (document.querySelector('.menu-bars'))
+    //   if (document.querySelector('.not-menu').style.display == 'block') {
+    //     document.querySelector('.not-menu').style.display = 'none'
+    //     document.querySelector('.menu').style.display = 'block'
+    //     document.querySelector('.header-container').style.background = '#fcf1ea'
+    //   } else {
+    //     document.querySelector('.not-menu').style.display = 'block'
+    //     document.querySelector('.menu').style.display = 'none'
+    //     document.querySelector('.header-container').style.background = 'linear-gradient(90deg, #fcf9f8 60%, #fcf1ea 60%)'
+    //   }
+    document.querySelector('.menu').classList.toggle('active')
+    document.querySelector('.header-container').classList.toggle('active')
+    document.querySelector('.not-menu').classList.toggle('notactive')
+  }
+</script>
 
 </html>
